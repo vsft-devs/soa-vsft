@@ -1,0 +1,23 @@
+<div class="pl-4 flex justify-between" (click)="toggleIcon();  $event.stopPropagation();">
+  <span>{{ key }}</span>
+  <span nz-icon [nzType]="toggleType" nzTheme="outline"></span>
+</div>
+
+
+<div class="transform transition-all duration-700 ease-in-out">
+
+  <ul *ngIf="props.menu[key].submenu" [ngStyle]="{ 'display': (toggleType == 'up-circle') ? 'block': 'none'}"
+    class="bg-white mt-2 pl-8 pt-2">
+    <li *ngFor="let skey of objKeys(props.menu[key].submenu); let sidx = index" class="m-2 p-2  ">
+      <a *ngIf="props.menu[key].submenu[skey].fragment" [routerLink]="props.menu[key].submenu[skey].path"
+        [fragment]="props.menu[key].submenu[skey].fragment" routerLinkActive="underline"
+        [routerLinkActiveOptions]="{ exact: true }" (click)="close.emit();">
+        {{ skey }}
+      </a>
+      <a *ngIf="!props.menu[key].submenu[skey].fragment" [routerLink]="props.menu[key].submenu[skey].path"
+        routerLinkActive="underline" (click)="close.emit();">
+        {{ skey }}
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,20 @@
+<section class="py-8 xl:mx-24">
+  <div class="px-8 md:px-20 xl:px-64">
+    <div class="text-lg font-semibold " data-aos="fade-up" data-aos-duration="2000">
+      <h6>
+        <app-heading textColor="black" [heading]="heading">
+
+        </app-heading>
+      </h6>
+      <ng-content select="[title]"></ng-content>
+    </div>
+    <div *ngIf="hasContent" class="grid auto-rows-min xl:grid-rows-none xl:grid-cols-2 gap-6 xl:gap-12 text-lg font-semibold">
+      <div>
+        <ng-content select="[hero-content]"></ng-content>
+      </div>
+      <div>
+        <ng-content select="[hero-image]"></ng-content>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="my-8 xl:m-24">
+  <div class="px-8 md:px-20 xl:px-64" data-aos="fade-up" data-aos-duration="2000">
+    <div class="text-lg font-semibold">
+      <h6><app-heading textColor="black" [heading]="content.props.title"></app-heading></h6>
+      <h4 class="text-soa-primary text-5xl font-bold my-2">
+        {{ content.props.heading[0]}}
+      </h4>
+    </div>
+  </div>
+  <div class="px-8 md:px-20 xl:px-64 grid auto-rows-min xl:grid-rows-none xl:grid-cols-2 gap-2 xl:gap-16 text-justify text-lg">
+    <div>
+      <p class="my-8 xl:my-12 italic" >
+        "{{ content.props.items[0].textContent }}"
+      </p>
+    </div>
+    <div class="flex flex-col w-full md:w-[50%] xl:w-40 xl:mt-8">
+      <img loading="lazy" [src]="content.props.items[0].profilePath" class="object-fit mb-4 h-28" />
+      @for (desc of content.props.items[0].profileDescription; track desc; let sidx = $index) {
+        <span class="leading-tight text-center font-semibold">{{desc}}</span>
+      }
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,66 @@
+<!-- <div class="mx-4 py-6" (mouseenter)="showSubMenu(props.menu[keys].submenu)"
+  (mouseleave)="hideSubMenu(props.menu[keys].submenu)">
+  <a *ngIf="props.menu[keys].submenu"
+    class="mx-2 relative text-center no-underline transition-all duration-300 ease-in-out" [routerLink]="props.menu[keys].path">
+    {{ keys }}
+    <ul *ngIf="openSubmenu && props.menu[keys].submenu"
+      class="bg-white w-52 border-t-4 border-soa-primary text-black text-sm absolute top-8 right-0">
+      <li *ngFor="let skeys of objKeys(props.menu[keys].submenu); let sidx = index"
+          class="m-2 p-2 hover:text-gray-600">
+        <a
+          [routerLink]="props.menu[keys].submenu[skeys].path"
+          (click)="$event.stopPropagation()">
+          {{ skeys }}
+        </a>
+      </li>
+    </ul>
+    <span class="chevron bottom"></span>
+  </a>
+  <a *ngIf="!props.menu[keys].submenu"
+    class="text-center no-underline transition-all duration-300 ease-in-out">
+    <li [routerLink]="props.menu[keys].path">{{keys}}</li>
+  </a>
+</div>
+ -->
+
+ <div class="mx-4 py-6"
+  (mouseenter)="showSubMenu(props.menu[keys].submenu)"
+  (mouseleave)="hideSubMenu(props.menu[keys].submenu)">
+
+  <!-- Parent Menu with Submenu -->
+  <a *ngIf="props.menu[keys].submenu"
+    class="mx-2 relative text-center transition-all duration-300 ease-in-out"
+    [routerLink]="props.menu[keys].path"
+    routerLinkActive="underline">
+    {{ keys }}
+    <ul *ngIf="openSubmenu && props.menu[keys].submenu"
+      class="bg-white w-52 border-t-4 border-soa-primary text-black text-sm absolute top-8 right-0 shadow-xl">
+      <li *ngFor="let skeys of objKeys(props.menu[keys].submenu); let sidx = index"
+          class="m-2 p-2 hover:text-gray-600">
+        <a *ngIf="props.menu[keys].submenu[skeys].fragment"
+          [routerLink]="props.menu[keys].submenu[skeys].path"
+          [fragment]="props.menu[keys].submenu[skeys].fragment"
+          routerLinkActive="underline"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="$event.stopPropagation()">
+          {{ skeys }}
+        </a>
+        <a *ngIf="!props.menu[keys].submenu[skeys].fragment"
+        [routerLink]="props.menu[keys].submenu[skeys].path"
+        routerLinkActive="underline"
+        (click)="$event.stopPropagation()">
+        {{ skeys }}
+      </a>
+      </li>
+    </ul>
+    <span class="chevron bottom"></span>
+  </a>
+
+  <!-- Parent Menu without Submenu -->
+  <a *ngIf="!props.menu[keys].submenu"
+    class="text-center transition-all duration-300 ease-in-out"
+    [routerLink]="props.menu[keys].path"
+    routerLinkActive="underline" [routerLinkActiveOptions]="{ exact: true }">
+    <li>{{ keys }}</li>
+  </a>
+</div>

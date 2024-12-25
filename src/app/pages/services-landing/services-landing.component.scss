@@ -1,0 +1,26 @@
+
+@media (max-width: 768px) {
+  .services-img-h {
+    height: 100%;
+  }
+}
+
+// @media (min-width: 769px) and (max-width: 1024px){
+//   .services-img-h {
+//     height: 80%;
+//   }
+// }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-img-h {
+    height: 60vh; /* or a value that works for your layout */
+  }
+}
+
+
+.clippy-lg {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+}
+
+.clippy-sm {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+}

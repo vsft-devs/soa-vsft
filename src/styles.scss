@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .heading-prefix::before {
+    @apply absolute top-0 left-0 w-10 h-0 border-t-3 border-solid border-[#F2781C] mt-[2.6%] ml-[0.5%] z-10 content-['']
+  }
+}
+
+@layer utilities {
+  .after-content-3::after {
+    content: "\25BE";
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    font-weight: 800;
+  }
+}

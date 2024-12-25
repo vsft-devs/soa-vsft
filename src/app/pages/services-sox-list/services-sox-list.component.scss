@@ -1,0 +1,9 @@
+.clippy-1 {
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+@media (min-width: 769px) and (max-width: 2500px) {
+.clippy-1 {
+  clip-path: polygon(0 0, 100% 11%, 100% 90%, 0 80%);
+
+}
+}

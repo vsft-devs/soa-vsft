@@ -1,0 +1,66 @@
+<!-- <nz-header> -->
+<!-- <header class="absolute top-0 left-0 text-white py-1 text-center w-full z-50"> -->
+<header id="header"
+  class="fixed top-0 left-0 text-white py-1 text-center w-full z-50 transition-all duration-300 ease-in-out">
+  <div class="pl-[8px] md:pl-[16px] xl:pl-[32px] grid xl:grid-cols-2 gap-2">
+    <div class="h-full w-[80%] md:w-[40%] xl:w-[60%]">
+      <!-- <img routerLink="" [src]="isScroll? props.logo.pathScroll : props.logo.path"
+        class="h-[76px] xl:w-[312px] xl:h-[72px] transition-all duration-400 ease-in-out" [ngClass]="{
+        'h-[76px] xl:w-[312px] xl:h-[72px]': !isScroll,
+        'w-40 xl:w-44 h-12  xl:mt-3': isScroll
+      }" /> -->
+      <h1 class="text-xl xl:text-3xl font-bold text-left mt-4" [ngClass]="{
+        'text-white': !isScroll,
+        'text-gray-700': isScroll
+      }"><a routerLink="">Wealthworks Partners</a></h1>
+    </div>
+    <div class="justify-end hidden xl:flex">
+      <nav class="text-base font-bold mx-8">
+        <ul class="list-none flex">
+          @for (keys of objKeys(props.menu); track keys; let idx = $index) {
+          <li>
+            <app-menu [props]="props" [keys]="keys"></app-menu>
+          </li>
+          }
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="absolute right-4 md:right-6 xl:hidden top-6">
+    <button id="menu-btn" (click)="toggleMenu()"
+      class="relative w-7 h-[18px] flex flex-col justify-between items-center group">
+      <span class="block h-[2px] md:h-[3px] w-full transition-transform duration-300 ease-in-out" [ngClass]="{
+        'bg-gray-100': !isScroll,
+        'bg-black': isScroll
+      }" [class.rotate-45]="isMenuOpen" [class.translate-y-2]="isMenuOpen"></span>
+      <span class="block h-[2px] md:h-[3px] w-full transition-opacity duration-300 ease-in-out" [ngClass]="{
+        'bg-gray-100': !isScroll,
+        'bg-black': isScroll
+      }" [class.opacity-0]="isMenuOpen"></span>
+      <span class="block h-[2px] md:h-[3px] w-full bg-gray-100 transition-transform duration-300 ease-in-out" [ngClass]="{
+        'bg-gray-100': !isScroll,
+        'bg-black': isScroll
+      }" [class.-rotate-45]="isMenuOpen" [class.-translate-y-2]="isMenuOpen"></span>
+    </button>
+  </div>
+
+  <div [ngClass]="{
+    'translate-x-0 opacity-100': isMenuOpen,
+    '-translate-x-full opacity-0': !isMenuOpen
+  }"
+    class="absolute top-16 bg-white text-black shadow-lg w-full xl:hidden transform transition-all duration-700 ease-in-out overflow-hidden px-4 py-4">
+    <ul class="flex flex-col text-lg text-left text-soa-primary font-semibold relative">
+      <li *ngFor="let key of objKeys(props.menu); let idx = index" class="m-1 cursor-pointer">
+        <a *ngIf="props.menu[key].submenu"
+          class="relative pl-4 no-underline transition-colors duration-300 ease-in-out">
+          <app-toggle-icon [props]="props" [key]="key" (close)="isMenuOpen = false; $event.stopPropagation();"></app-toggle-icon>
+        </a>
+        <a *ngIf="!props.menu[key].submenu" class="relative pl-4 no-underline transition-colors duration-300 ease-in-out"
+          (click)="isMenuOpen = false" [routerLink]="props.menu[key].path" >
+          {{ key }}
+        </a>
+        <hr class="p-0 m-1" />
+      </li>
+    </ul>
+  </div>
+</header>

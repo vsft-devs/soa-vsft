@@ -1,0 +1,31 @@
+<div role="region" aria-label="Image Carousel" tabindex="0" #carousel>
+  <div>
+    <div (click)="goToPrevious()"
+      class="absolute top-[50%] text-2xl xl:text-4xl text-white left-[8px] xl:left-[32px] z-10 cursor-pointer">❰</div>
+    <div (click)="goToNext()"
+      class="absolute top-[50%] text-2xl xl:text-4xl text-white right-[20px] xl:right-[32px] z-10 cursor-pointer">❱
+    </div>
+  </div>
+  <div class="relative text-white">
+    <div class="bg-blend-darken bg-black  slider overflow-hidden">
+      <img loading="lazy" [src]="getCurrentSlideUrl()"
+        class="slide opacity-40 bg-black h-[100dvh] w-screen object-cover xl:h-screen overflow-hidden relative block" />
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+
+    <div class="absolute bottom-0 h-24 w-full bg-soa-primary bg-opacity-40 ease-in duration-300 xl:block hidden">
+      <div class="flex flex-row h-full justify-center text-center">
+        @for (index of slides; track index; let idx = $index) {
+        <span
+          class="hover:bg-soa-primary hover:border-t-2 hover:border-white p-4 max-w-60 transition-all duration-300 ease-in"
+          [ngClass]="{'bg-soa-primary': idx==currentIndex, 'border-t-2': idx==currentIndex, 'border-white': idx==currentIndex, 'hidden': idx==0}"
+          (click)="goToSlide(idx)" [attr.aria-hidden]="idx !== currentIndex">
+          <span class="text-white text-lg font-medium">
+            <a class="hover:text-white ">{{ index.title }}</a></span>
+        </span>
+        }
+      </div>
+    </div>
+    <app-carousel-img-desc *ngIf="showChild" [currentIndex]="currentIndex" [slides]="slides" [key]="childKey" />
+  </div>
+</div>

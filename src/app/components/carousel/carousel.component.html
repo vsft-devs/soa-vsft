@@ -1,0 +1,18 @@
+<nz-carousel nzAutoPlay>
+  @for (index of array; track index) {
+    <div nz-carousel-content>
+      <img loading="lazy" [src]="index.path" class="h-full object-cover w-full" />
+    </div>
+
+  }
+
+
+</nz-carousel>
+<!-- <ng-template #dots let-index>
+ [nzDotRender]="dots
+      <span class="m-4">
+        <a class="p-4" href="">{{array[index].title}}</a>
+      </span>
+
+
+</ng-template> -->

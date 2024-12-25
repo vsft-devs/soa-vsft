@@ -1,0 +1,42 @@
+
+<div class="relative xl:flex xl:items-center services-img-h xl:h-1/2 xl:mb-60">
+  <div class="relative xl:mt-48 services-img-h">
+    <div class="h-[90%]">
+      <img loading="lazy" [src]="landimgImg" class="h-full w-screen object-cover xl:clippy-lg clippy-sm" appImageViewer/>
+      <div class="absolute xl:h-full h-[90%] inset-0 bg-black opacity-50 xl:clippy-lg clippy-sm"></div>
+    </div>
+  </div>
+  <div class="absolute px-4 xl:left-96 top-[20%] xl:top-[50%]">
+    <div class="flex flex-col">
+      <h2 class="mx-1 md:mx-24 xl:mx-0 text-white text-left text-5xl font-bold" data-aos="fade-in" data-aos-duration="2000">
+        <ng-content select="[title]"></ng-content>
+      </h2>
+      <div class="my-8 md:mx-24 xl:mx-0 text-white text-left" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-lg xl:w-1/2 font-medium flex-wrap flex-row overflow-hidden">
+          <ng-content select="[description]"></ng-content>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- <div class="relative xl:flex xl:items-center services-img-h xl:h-[60vh] xl:mb-0">
+  <div class="relative xl:mt-0 services-img-h">
+    <div class="h-full">
+      <img loading="lazy" [src]="landimgImg" class="h-full w-full object-cover xl:clippy-lg clippy-sm" appImageViewer />
+      <div class="absolute xl:h-full h-full inset-0 bg-black opacity-50 xl:clippy-lg clippy-sm"></div>
+    </div>
+  </div>
+  <div class="absolute left-8 xl:left-96 top-[20%] xl:top-[50%]">
+    <div class="flex flex-col">
+      <h2 class="mx-1 md:mx-24 xl:mx-0 text-white text-left text-5xl font-bold" data-aos="fade-in" data-aos-duration="2000">
+        <ng-content select="[title]"></ng-content>
+      </h2>
+      <div class="my-8 md:mx-24 xl:mx-0 text-white text-left" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-lg xl:w-1/2 font-medium flex-wrap flex-row overflow-hidden">
+          <ng-content select="[description]"></ng-content>
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->

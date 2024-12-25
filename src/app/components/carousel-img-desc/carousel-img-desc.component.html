@@ -1,0 +1,17 @@
+<div class="absolute left-0 top-[40%] xl:top-[40%] w-full" data-aos="fade-right" data-aos-duration="2000">
+  <div class="flex flex-col xl:pl-80">
+    <h2 class="mx-1 xl:mx-0 text-white text-center xl:text-left text-4xl xl:text-5xl font-bold leading-snug xl:leading-normal px-2 xl:p-0">
+      @for (item of slides[currentIndex].heading; track item) {
+      {{ item }} <br>
+      }
+    </h2>
+    <div class="my-8 mx-12 md:mx-24 xl:mx-0 text-center xl:text-left" data-aos="fade-right" data-aos-duration="3000">
+      <p class="text-lg xl:w-2/3 font-medium flex-wrap flex-row overflow-hidden"> {{ slides[currentIndex].description }}</p>
+    </div>
+    <div class="mt-2 text-center xl:text-left" *ngIf="currentIndex !=0">
+      <button [routerLink]="getServiceRouteLink()" class="bg-white text-soa-primary px-4 py-2 font-semibold text-lg border-2 border-soa-primary hover:bg-soa-primary hover:text-white hover:mr-2">
+        LEARN MORE
+      </button>
+    </div>
+  </div>
+</div>

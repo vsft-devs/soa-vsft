@@ -1,0 +1,10 @@
+<ng-container *ngIf="heading">
+  <div class="relative">
+    <div class="header-prefix"></div>
+  </div>
+  <h3 class="ml-12 font-medium text-base mb-4" [ngClass]="{'text-white': textColor=='white', 'text-black': textColor=='black'}">
+    {{ heading }}
+  </h3>
+
+</ng-container>
+
