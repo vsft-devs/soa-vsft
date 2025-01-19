@@ -10,7 +10,6 @@ export class HeroSectionComponent implements OnInit {
   @Input() content: any
   @Input() heading?: string | undefined;
   ngOnInit(): void {
-    console.log("content -- ", this.content)
   }
   @ContentChildren('hero-content') bcontent!: ElementRef;
 

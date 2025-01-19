@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"soa-vsft": {
+		"soa-projects": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -24,7 +24,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/soa-vsft",
+						"outputPath": "dist/soa-projects",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
 						"polyfills": [
@@ -79,10 +79,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "soa-vsft:build:production"
+							"buildTarget": "soa-projects:build:production"
 						},
 						"development": {
-							"buildTarget": "soa-vsft:build:development"
+							"buildTarget": "soa-projects:build:development"
 						}
 					},
 					"defaultConfiguration": "development"

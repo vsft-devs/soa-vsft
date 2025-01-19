@@ -90,8 +90,6 @@ export class AppComponent implements OnInit {
         };
       }
     });
-    console.log("dynamicRoutes - ", dynamicRoutes);
-
     this.router.resetConfig([...this.router.config, ...dynamicRoutes]);
   }
 }

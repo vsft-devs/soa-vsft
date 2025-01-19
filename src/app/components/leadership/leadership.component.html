@@ -11,27 +11,26 @@
     </div>
   </div>
   <div class="px-8 md:px-20 xl:px-64 xl:py-12">
-    <div class="grid grid-rows md:grid-cols-2 xl:grid-rows-none xl:grid-cols-4 gap-4 justify-center py-8 xl:p-0">
+    <div class="grid grid-rows md:grid-cols-2 xl:grid-rows-none xl:grid-cols-[auto-fit] xl:gap-4 py-8 xl:p-0 justify-center" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
       @for (leader of content.props.content.leaders; track leader) {
-      <div class="flex m-4">
-        <div class="justify-center">
-          <img loading="lazy" class="px-20 object-fit" [src]="leader.path" />
-          <div class="text-base mt-4 font-bold text-center">
+
+        <div class="text-center my-4">
+          <img loading="lazy" class="px-20 object-fit mx-auto" [src]="leader.path" />
+          <div class="text-base mt-4 font-bold">
             {{ leader.name}}
           </div>
-          <div class="text-sm italic font-semibold text-center">
+          <div class="text-sm italic font-semibold">
             {{ leader.role}}
           </div>
           <ng-container *ngIf="source == 'about-us'">
-            <div class="text-sm mt-2 text-center" >
-              <a class="underline">View More</a>
+            <div class="text-sm mt-2" >
+              <a class="underline" href={{leader.site}} target="_blank">View More</a>
             </div>
-            <div class="text-base m-1 font-bold text-center" >
+            <div class="text-base m-1 font-bold">
               <span nz-icon nzType="linkedin" nzTheme="outline"></span>
             </div>
           </ng-container>
         </div>
-      </div>
       }
     </div>
   </div>

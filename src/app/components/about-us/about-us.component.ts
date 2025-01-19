@@ -17,8 +17,6 @@ export class AboutUsComponent {
         if(route.layout && route.layout.sections.length) {
           route.layout.sections.forEach((section: any) => {
             if(section.type == 'leadership') {
-              console.log('section - ', section);
-
               this.leadershipData = section;
             }
           })

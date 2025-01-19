@@ -16,7 +16,6 @@ export class MenuComponent implements OnInit {
   }
 
   showSubMenu(submenu: any) {
-    console.log("submenu show - ", submenu);
     if(!submenu) {
       this.openSubmenu = false;
     } else {
@@ -26,7 +25,6 @@ export class MenuComponent implements OnInit {
   }
 
   hideSubMenu(submenu: any) {
-    console.log("submenu hide - ", submenu);
     if(!submenu) {
       this.openSubmenu = false;
     }

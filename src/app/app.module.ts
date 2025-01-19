@@ -6,11 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule, registerLocaleData } from '@angular/common';
-import { CarouselComponent } from './components/carousel/carousel.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { NzCarouselModule } from 'ng-zorro-antd/carousel';
-import { NzLayoutModule  } from 'ng-zorro-antd/layout'
-import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 
 import { en_US } from 'ng-zorro-antd/i18n';
@@ -54,7 +50,6 @@ registerLocaleData(en);
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent,
     HomePageComponent,
     RenderLayoutComponent,
     CustomCarouselComponent,
@@ -89,10 +84,7 @@ registerLocaleData(en);
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    NzCarouselModule,
-    NzLayoutModule,
-    NzIconModule,
-    NzTypographyModule
+    NzIconModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },

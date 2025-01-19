@@ -8,7 +8,6 @@ import { AfterViewInit, Component, HostListener, Input, OnDestroy, OnInit, Rende
 export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy{
 
   ngAfterViewInit(): void {
-    console.log("this2 --", this.props)
   }
   @Input() props!: any;
   @Input() template!: any;
@@ -50,7 +49,6 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy{
   }
 
   showSubMenu(submenu: any) {
-    console.log("submenu show - ", submenu);
     if(!submenu) {
       this.openSubmenu = false;
     } else {
@@ -60,7 +58,6 @@ export class HeaderComponent implements OnInit, AfterViewInit, OnDestroy{
   }
 
   hideSubMenu(submenu: any) {
-    console.log("submenu hide - ", submenu);
     if(!submenu) {
       this.openSubmenu = false;
     }

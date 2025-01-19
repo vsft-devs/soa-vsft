@@ -68,7 +68,7 @@ export const persona = {
                 props: {
                   slides: [
                     {
-                      "path": "assets/images/Hero-Bridge.jpg",
+                      "path": "assets/images/wealthworks-home.jpeg",
                       "title": "Home",
                       "heading": ["Welcome to Wealthworks Partners"],
                       "description": "We are a leading professional advisory firm that support its clients as they grow and transition throughout their lifecycle and offers six service lines that cover a broad range of professional services.",
@@ -126,36 +126,11 @@ export const persona = {
                   heading: ['Experienced Partners', '& Leadership'],
                   content: {
                     leaders:[
-
                       {
-                        name: "John Joe",
-                        role: "Managing Partner & Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
-                      },
-                      {
-                        name: "John Doe",
-                        role: "Managing Partner & Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
-                      },
-                      {
-                        name: "John Doe",
-                        role: "Managing Partner & Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
-                      },
-                      {
-                        name: "John Doe",
-                        role: "Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
-                      },
-                      {
-                        name: "Doe John",
-                        role: "Managing Partner & Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
-                      },
-                      {
-                        name: "John Doe",
-                        role: "Managing Partner & Chief Executive Officer",
-                        path: 'assets/images/avatar_placeholder.jpg'
+                        name: "Seema Rajoura",
+                        role: "Founder & CEO",
+                        path: 'assets/images/SeemaRajoura.jpeg',
+                        site: 'https://www.linkedin.com/in/seema-rajoura/'
                       }
                     ]
                   }

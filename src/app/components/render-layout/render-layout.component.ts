@@ -1,7 +1,5 @@
 import { Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CarouselComponent } from '../carousel/carousel.component';
-import { HomePageComponent } from '../../pages/home-page/home-page.component';
 import { CustomCarouselComponent } from '../custom-carousel/custom-carousel.component';
 import { HeroSectionComponent } from '../hero-section/hero-section.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -59,8 +57,6 @@ export class RenderLayoutComponent implements OnInit {
   getComponent(section: any) {
     if(section.type == 'projection') {
       if(section.props && section.props.componentName) {
-        console.log("n - ", section.props.componentName);
-
         return this.layoutComponentsMap[section.props.componentName];
       }
     }

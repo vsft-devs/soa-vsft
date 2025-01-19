@@ -91,7 +91,7 @@ export class CustomCarouselComponent implements OnInit, OnDestroy {
     this.resetTimer();
   }
 
-  getCurrentSlideUrl() {
+    getCurrentSlideUrl() {
     return this.slides[this.currentIndex].path;
   }
 }
