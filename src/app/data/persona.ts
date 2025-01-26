@@ -114,13 +114,13 @@ export const persona = {
                 }
               },
               {
-                type: 'projection',
+                type: 'projection', // template driven
                 props: {
                   componentName: "HomeHero1Component"
                 },
               },
               {
-                type: 'leadership',
+                type: 'leadership', // - data driven
                 props: {
                   title: 'COMING FROM THE BIG4',
                   heading: ['Experienced Partners', '& Leadership'],

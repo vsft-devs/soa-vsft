@@ -1,19 +1,18 @@
-<div class="py-64 xl:py-32 bg-black bg-opacity-60 bg-[url('/assets/images/buildings-scaled.jpg')] bg-blend-darken text-white clippy">
+<div class="py-60 xl:py-32 bg-black bg-opacity-60 bg-[url('/assets/images/buildings-scaled.jpg')] bg-blend-darken text-white clippy">
   <div class="p-8 md:px-20 xl:px-40" data-aos="zoom-in" data-aos-duration="2000">
     <div class="text-lg font-semibold">
       <h6><app-heading textColor="white" [heading]="content.props.title"></app-heading></h6>
-      <h2 class="text-white text-3xl xl:text-5xl font-bold my-2">
+      <h2 class="vs-heading_white my-2">
         {{ content.props.heading[0]}}
       </h2>
-      <h4 class="text-soa-primary text-2xl xl:text-5xl font-bold my-2">
+      <h4 class="vs-heading_primary my-2">
         {{ content.props.heading[1]}}
       </h4>
     </div>
   </div>
-  <div class="px-8 md:px-20 xl:px-64 xl:py-12">
-    <div class="grid grid-rows md:grid-cols-2 xl:grid-rows-none xl:grid-cols-[auto-fit] xl:gap-4 py-8 xl:p-0 justify-center" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+  <div class="vs-padding-x xl:py-12">
+    <div class="grid grid-rows md:grid-cols-2 xl:grid-rows-none xl:grid-cols-[auto-fit] xl:gap-4 vs-padding_default xl:p-0 justify-center" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
       @for (leader of content.props.content.leaders; track leader) {
-
         <div class="text-center my-4">
           <img loading="lazy" class="px-20 object-fit mx-auto" [src]="leader.path" />
           <div class="text-base mt-4 font-bold">
