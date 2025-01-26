@@ -77,38 +77,38 @@ export const persona = {
                     {
                       "path": "assets/images/TA-Services_Moment.jpg",
                       "title": "Technical Accounting & IPO Services",
-                      "heading": ["Technical Accounting & IPO"],
-                      "description": "Technical Accounting experts just a call away."
+                      "heading": ["Technical Accounting & IPO Services"],
+                      "description": "Expert guidance in technical accounting is just a call away."
                     },
                     {
                       "path": "assets/images/Sox-landing.jpg",
                       "title": "SOX & Internal Audit",
                       "heading": ["SOX & Internal Audit"],
-                      "description": "Building trust and complete roadmap to success."
+                      "description": "Establishing trust with a comprehensive roadmap to success."
                     },
                     {
                       "path": "assets/images/IT-Compliance_Moment.jpg",
                       "title": "IT Compliance & Advisory",
                       "heading": ["IT Compliance &", "Advisory"],
-                      "description": "IT Audit, ERP, Cyber Security"
+                      "description": "Expertise in IT audits, ERP systems, and cybersecurity."
                     },
                     {
                       "path": "assets/images/RAFS_Moment.jpg",
                       "title": "RPA & Data Analytics",
                       "heading": ["Robotic Process Automation &", "Data Analytics"],
-                      "description": "Driving efficiency through RPA."
+                      "description": "Enhancing efficiency through robotic process automation."
                     },
                     {
                       "path": "assets/images/start-up.jpg",
                       "title": "Start-Up Services",
                       "heading": ["Hatchery & Start-Up Services"],
-                      "description": "Foster your future."
+                      "description": "Empowering your journey toward a successful future."
                     },
                     {
                       "path": "assets/images/directHire_Moment.jpg",
                       "title": "Direct Hire & Interim Report",
                       "heading": ["Direct Hire & Interim Report"],
-                      "description": "Obtain ideal placement."
+                      "description": "Helping you secure the perfect placement."
                     }
                   ]
                 }
