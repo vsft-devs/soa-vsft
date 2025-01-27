@@ -114,13 +114,13 @@ export const persona = {
                 }
               },
               {
-                type: 'projection',
+                type: 'projection', // template driven
                 props: {
                   componentName: "HomeHero1Component"
                 },
               },
               {
-                type: 'leadership',
+                type: 'leadership', // - data driven
                 props: {
                   title: 'COMING FROM THE BIG4',
                   heading: ['Experienced Partners', '& Leadership'],
@@ -136,25 +136,25 @@ export const persona = {
                   }
                 }
               },
-              {
-                type: 'testimonial',
-                props: {
-                  title: 'WHAT OUR CLIENTS ARE SAYING',
-                  heading: ['Testimonials'],
-                  items: [
-                    {
-                      "textContent": "Wealthworks Partners has been an excellent partner over the years. The resources they provide have been critical to achieving my compliance goals. Their outstanding level of partnership enabled us to do so within my cost envelope and with a vision to build scale into our compliance processes. The Wealthworks Partners team provided insights that created a strong foundation for the future while effectively meeting my immediate compliance and cost needs.",
-                      "profilePath": "assets/images/icon-team.png",
-                      "profileDescription": ["John Doe", "Sr. Director, Company"]
-                    },
-                    {
-                      "textContent": "I have worked with Wealthworks Partners on a number of assignments while I was Corporate Controller for 3PAR Inc. Projects included IPO readiness, SOX and revenue recogni2on and they consistently delivered high quality results at competitive prices. They provided the right level of experience and talent for the assignment and they were able to complete their assignments on budget. I would not hesitate to engage them again in the future.",
-                      "profilePath": "assets/images/Testimonials-GraybugLogo.jpg",
-                      "profileDescription": ["Jim Kirkland", "Controller, Graybug"]
-                    }
-                  ]
-                }
-              },
+              // {
+              //   type: 'testimonial',
+              //   props: {
+              //     title: 'WHAT OUR CLIENTS ARE SAYING',
+              //     heading: ['Testimonials'],
+              //     items: [
+              //       {
+              //         "textContent": "Wealthworks Partners has been an excellent partner over the years. The resources they provide have been critical to achieving my compliance goals. Their outstanding level of partnership enabled us to do so within my cost envelope and with a vision to build scale into our compliance processes. The Wealthworks Partners team provided insights that created a strong foundation for the future while effectively meeting my immediate compliance and cost needs.",
+              //         "profilePath": "assets/images/icon-team.png",
+              //         "profileDescription": ["John Doe", "Sr. Director, Company"]
+              //       },
+              //       {
+              //         "textContent": "I have worked with Wealthworks Partners on a number of assignments while I was Corporate Controller for 3PAR Inc. Projects included IPO readiness, SOX and revenue recogni2on and they consistently delivered high quality results at competitive prices. They provided the right level of experience and talent for the assignment and they were able to complete their assignments on budget. I would not hesitate to engage them again in the future.",
+              //         "profilePath": "assets/images/Testimonials-GraybugLogo.jpg",
+              //         "profileDescription": ["Jim Kirkland", "Controller, Graybug"]
+              //       }
+              //     ]
+              //   }
+              // },
               {
                 type: 'footer'
               }
@@ -315,25 +315,25 @@ export const persona = {
                   componentName: 'AboutUsComponent'
                 }
               },
-              {
-                type: 'testimonial',
-                props: {
-                  title: 'WHAT OUR CLIENTS ARE SAYING',
-                  heading: ['Testimonials'],
-                  items: [
-                    {
-                      "textContent": "Wealthworks Partners has been an excellent partner over the years. The resources they provide have been critical to achieving my compliance goals. Their outstanding level of partnership enabled us to do so within my cost envelope and with a vision to build scale into our compliance processes. The Wealthworks Partners team provided insights that created a strong foundation for the future while effectively meeting my immediate compliance and cost needs.",
-                      "profilePath": "assets/images/icon-team.png",
-                      "profileDescription": ["John Doe", "Sr. Director, Company"]
-                    },
-                    {
-                      "textContent": "I have worked with Wealthworks Partners on a number of assignments while I was Corporate Controller for 3PAR Inc. Projects included IPO readiness, SOX and revenue recogni2on and they consistently delivered high quality results at competitive prices. They provided the right level of experience and talent for the assignment and they were able to complete their assignments on budget. I would not hesitate to engage them again in the future.",
-                      "profilePath": "assets/images/Testimonials-GraybugLogo.jpg",
-                      "profileDescription": ["Jim Kirkland", "Controller, Graybug"]
-                    }
-                  ]
-                }
-              },
+              // {
+              //   type: 'testimonial',
+              //   props: {
+              //     title: 'WHAT OUR CLIENTS ARE SAYING',
+              //     heading: ['Testimonials'],
+              //     items: [
+              //       {
+              //         "textContent": "Wealthworks Partners has been an excellent partner over the years. The resources they provide have been critical to achieving my compliance goals. Their outstanding level of partnership enabled us to do so within my cost envelope and with a vision to build scale into our compliance processes. The Wealthworks Partners team provided insights that created a strong foundation for the future while effectively meeting my immediate compliance and cost needs.",
+              //         "profilePath": "assets/images/icon-team.png",
+              //         "profileDescription": ["John Doe", "Sr. Director, Company"]
+              //       },
+              //       {
+              //         "textContent": "I have worked with Wealthworks Partners on a number of assignments while I was Corporate Controller for 3PAR Inc. Projects included IPO readiness, SOX and revenue recogni2on and they consistently delivered high quality results at competitive prices. They provided the right level of experience and talent for the assignment and they were able to complete their assignments on budget. I would not hesitate to engage them again in the future.",
+              //         "profilePath": "assets/images/Testimonials-GraybugLogo.jpg",
+              //         "profileDescription": ["Jim Kirkland", "Controller, Graybug"]
+              //       }
+              //     ]
+              //   }
+              // },
               {
                 type: 'footer'
               }
