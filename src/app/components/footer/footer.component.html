@@ -5,23 +5,24 @@
         <app-heading textColor="white" heading="CONTACT"></app-heading>
         <h4 class="font-bold text-lg xl:text-xl mb-2 text-white">Corporate Office</h4>
         <div class="text-base font-medium">
-          <p class="">123 Office Rd</p>
-          <p class="">City, NA 12345</p>
+          <p class="">4120 Casterson Ct</p>
+          <p class="">Pleasanton, CA 94566</p>
         </div>
         <div class="my-6 font-medium">
-          <div class="flex flex-row my-1">
-            <a href="mailto:info@wealthworkspartners.com"></a>
-            <span nz-icon nzType="mail" nzTheme="outline"></span>
-            <p class="mb-1"><span class="inline-block w-6"></span>info&#64;wealthworkspartners.com</p>
-          </div>
+          <a href="mailto:info@wealthworkspartners.com">
+            <div class="flex flex-row my-1">
+              <span nz-icon nzType="mail" nzTheme="outline"></span>
+              <p class="mb-1"><span class="inline-block w-6"></span>info&#64;wealthworkspartners.com</p>
+            </div>
+          </a>
           <div class="flex flex-row my-1">
             <a href="tel:6509609900"></a>
             <span nz-icon nzType="mobile" nzTheme="outline"></span>
-            <p class="mb-1"><span class="inline-block w-6"></span>(123) 456-7890</p>
+            <p class="mb-1"><span class="inline-block w-6"></span>+1-5102033601</p>
           </div>
           <div class="flex flex-row my-1">
             <span nz-icon nzType="printer" nzTheme="outline"></span>
-            <p class="mb-1"><span class="inline-block w-6"></span>(123) 456-7890</p>
+            <p class="mb-1"><span class="inline-block w-6"></span>+1-5102033601</p>
           </div>
         </div>
       </div>
@@ -31,15 +32,15 @@
         <div class="text-base font-medium flex flex-col my-4">
           <div class="flex flex-row">
             <span nz-icon nzType="environment" nzTheme="outline"></span>
-            <p class="mb-1"><span class="inline-block w-6"></span>City</p>
+            <p class="mb-1"><span class="inline-block w-6"></span>Pleasanton</p>
           </div>
-          <p class="ml-4"><span class="inline-block w-6"></span>(123) 456-7890</p>
+          <p class="ml-4"><span class="inline-block w-6"></span>+1-5102033601</p>
           <div class="my-2"></div>
           <div class="flex flex-row">
             <span nz-icon nzType="environment" nzTheme="outline"></span>
-            <p class="mb-1"><span class="inline-block w-6"></span>State</p>
+            <p class="mb-1"><span class="inline-block w-6"></span>California</p>
           </div>
-          <p class="ml-4"><span class="inline-block w-6"></span>(123) 456-7890</p>
+          <p class="ml-4"><span class="inline-block w-6"></span>+1-5102033601</p>
         </div>
 
       </div>
@@ -64,19 +65,22 @@
       <div class="my-4">
         <app-heading textColor="white" heading="PRIVACY"></app-heading>
         <h4 class="font-bold text-xl mb-2 text-white">Our Privacy Policy</h4>
-        <p class="mb-4 font-semibold w-full text-base xl:w-2/3 leading-normal">We do not share aggregate, non-personally identifiable information with other entities or
+        <p class="mb-4 font-semibold w-full text-base xl:w-2/3 leading-normal">We do not share aggregate, non-personally
+          identifiable information with other entities or
           organizations.</p>
-          <div class="flex flex-row py-4">
-            <span nz-icon nzType="container" nzTheme="outline"></span>
-            <p class="mb-1 font-medium text-lg xl:text-base"><span class="inline-block w-6"></span><a href="#" class="text-white font-semibold">View Privacy Policy</a></p>
-          </div>
+        <div class="flex flex-row py-4">
+          <span nz-icon nzType="container" nzTheme="outline"></span>
+          <p class="mb-1 font-medium text-lg xl:text-base"><span class="inline-block w-6"></span><a href="#"
+              class="text-white font-semibold">View Privacy Policy</a></p>
+        </div>
       </div>
     </div>
   </div>
 </footer>
 <app-copyright></app-copyright>
 
-<div class="fixed bottom-1 right-2 transition-all duration-400 ease-in-out" data-aos="fade-up" data-aos-duration="500" *ngIf="isScrollToTop">
+<div class="fixed bottom-1 right-2 transition-all duration-400 ease-in-out" data-aos="fade-up" data-aos-duration="500"
+  *ngIf="isScrollToTop">
   <button class="bg-soa-primary text-white font-bold h-12 w-12 shadow-xl" (click)="scrollToTop()">
     <span nz-icon nzType="arrow-up" nzTheme="outline"></span>
   </button>
