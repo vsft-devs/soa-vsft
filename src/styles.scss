@@ -8,6 +8,70 @@
   .heading-prefix::before {
     @apply absolute top-0 left-0 w-10 h-0 border-t-3 border-solid border-[#F2781C] mt-[2.6%] ml-[0.5%] z-10 content-['']
   }
+
+  .vs-heading {
+    @apply text-gray-700 text-3xl xl:text-5xl font-bold
+  }
+
+  .vs-heading_primary {
+    @apply text-soa-primary text-3xl xl:text-5xl font-bold
+  }
+
+  .vs-heading_white {
+    @apply text-white text-3xl xl:text-5xl font-bold
+  }
+
+  .vs-heading_logo {
+    @apply text-xl xl:text-3xl font-bold
+  }
+
+  .vs-heading_2xl {
+    @apply text-gray-700 text-2xl font-bold
+  }
+
+  .vs-heading_xl {
+    @apply text-xl font-bold
+  }
+
+  .vs-heading_base {
+    @apply text-base font-bold
+  }
+
+  .vs-margin {
+    @apply my-8 xl:m-24
+  }
+
+  .vs-margin-x {
+    @apply xl:mx-24
+  }
+
+  .vs-padding_default {
+    @apply py-8
+  }
+
+  .vs-padding-y {
+    @apply xl:py-12 xl:pt-24
+  }
+
+  .vs-padding-x {
+    @apply px-8 md:px-20 xl:px-64
+  }
+
+  .vs-padding {
+    @apply px-20 py-4
+  }
+
+  .vs-text-content {
+    @apply vs-padding-x text-lg font-semibold
+  }
+
+  .vs-para-margin {
+    @apply my-4 xl:my-8 text-justify
+  }
+
+  p {
+    @apply my-4
+  }
 }
 
 @layer utilities {
@@ -19,4 +83,5 @@
     top: 10px;
     font-weight: 800;
   }
+
 }
