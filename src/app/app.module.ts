@@ -42,6 +42,7 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ImageViewerDirective } from './directive/image-viewer.directive';
 import { ToggleIconComponent } from './components/toggle-icon/toggle-icon.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 registerLocaleData(en);
 
@@ -77,7 +78,8 @@ registerLocaleData(en);
     CopyrightComponent,
     AboutUsComponent,
     ImageViewerDirective,
-    ToggleIconComponent
+    ToggleIconComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
