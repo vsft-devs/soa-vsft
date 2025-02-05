@@ -17,6 +17,7 @@ import { ServicesStartupListComponent } from '../../pages/services-startup-list/
 import { ServicesStartupComponent } from '../../pages/services-startup/services-startup.component';
 import { ServicesAlchemyComponent } from '../../pages/services-alchemy/services-alchemy.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
+import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
 
 @Component({
   selector: 'app-render-layout',
@@ -44,7 +45,8 @@ export class RenderLayoutComponent implements OnInit {
     "ServicesStartupComponent": ServicesStartupComponent,
     "ServicesStartupListComponent": ServicesStartupListComponent,
     "ServicesAlchemyComponent": ServicesAlchemyComponent,
-    "AboutUsComponent": AboutUsComponent
+    "AboutUsComponent": AboutUsComponent,
+    "PrivacyPolicyComponent": PrivacyPolicyComponent,
   };
 
   constructor(private route: ActivatedRoute, private resolver: ComponentFactoryResolver) {}

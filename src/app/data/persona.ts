@@ -338,13 +338,30 @@ export const persona = {
                 type: 'footer'
               }
             ]
-
           }
         }
       ]
-
+    },
+    {
+      props: {},
+      routes: [
+        {
+          path: 'privacy-policy',
+          layout: {
+            sections: [
+              {
+                type: 'projection',
+                props: {
+                  componentName: 'PrivacyPolicyComponent'
+                }
+              },
+              {
+                type: 'footer'
+              }
+            ]
+          }
+        }
+      ]
     }
-
   ],
-
 };
