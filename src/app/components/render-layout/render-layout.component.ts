@@ -18,6 +18,10 @@ import { ServicesStartupComponent } from '../../pages/services-startup/services-
 import { ServicesAlchemyComponent } from '../../pages/services-alchemy/services-alchemy.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
 import { PrivacyPolicyComponent } from '../../pages/privacy-policy/privacy-policy.component';
+import { ServicesDataCenterComponent } from '../../pages/services-data_center/services-data_center.component';
+import { ServicesDataCenterListComponent } from '../../pages/services-data_center-list/services-data_center-list.components';
+import { ServicesSalesforceComponent } from '../../pages/services-salesforce/services-salesforce.component';
+import { ServicesSalesforceListComponent } from '../../pages/services-salesforce-list/services-salesforce-list.component';
 
 @Component({
   selector: 'app-render-layout',
@@ -45,6 +49,10 @@ export class RenderLayoutComponent implements OnInit {
     "ServicesStartupComponent": ServicesStartupComponent,
     "ServicesStartupListComponent": ServicesStartupListComponent,
     "ServicesAlchemyComponent": ServicesAlchemyComponent,
+    "ServicesDataCenterComponent": ServicesDataCenterComponent,
+    "ServicesDataCenterListComponent": ServicesDataCenterListComponent,
+    "ServicesSalesforceComponent": ServicesSalesforceComponent,
+    "ServicesSalesforceListComponent": ServicesSalesforceListComponent,
     "AboutUsComponent": AboutUsComponent,
     "PrivacyPolicyComponent": PrivacyPolicyComponent,
   };
