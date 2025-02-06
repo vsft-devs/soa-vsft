@@ -13,6 +13,15 @@ export const persona = {
         Services: {
           path: '/services',
           submenu: {
+            'Data Center & Network Deployment':{
+              path: '/services/data-center-network-deployment'
+            },
+            'RPA & Data Analytics': {
+              path: '/services/rpa-analytics',
+            },
+            'Salesforce Cloud': {
+              path: '/services/salesforce-cloud'
+            },
             'Technical Accounting & IPO Services': {
               path: '/services/technical-accounting'
             },
@@ -21,9 +30,6 @@ export const persona = {
             },
             'IT Compliance & Advisory': {
               path: '/services/it-compliance-advisory',
-            },
-            'RPA & Data Analytics': {
-              path: '/services/rpa-analytics',
             },
             'Start-Up Services': {
               path: '/services/startup-services',
@@ -75,6 +81,24 @@ export const persona = {
                       "visible": false
                     },
                     {
+                      "path": "assets/images/data-center-infrastructure-carousel.jpg",
+                      "title": "Data Center & Network Deployment",
+                      "heading": ["Date Center & Network Deployment"],
+                      "description": "Powering Scalable, Secure, and High-Performance Google Infrastructure.",
+                    },
+                    {
+                      "path": "assets/images/RAFS_Moment.jpg",
+                      "title": "RPA & Data Analytics",
+                      "heading": ["Robotic Process Automation &", "Data Analytics"],
+                      "description": "Enhancing efficiency through robotic process automation."
+                    },
+                    {
+                      "path": "assets/images/salesforce_carousel.jpg",
+                      "title": "Salesforce Cloud",
+                      "heading": ["Salesforce Cloud"],
+                      "description": "Empowering Businesses with Scalable, AI-Driven Salesforce CRM Solutions."
+                    },
+                    {
                       "path": "assets/images/TA-Services_Moment.jpg",
                       "title": "Technical Accounting & IPO Services",
                       "heading": ["Technical Accounting & IPO Services"],
@@ -91,13 +115,7 @@ export const persona = {
                       "title": "IT Compliance & Advisory",
                       "heading": ["IT Compliance &", "Advisory"],
                       "description": "Expertise in IT audits, ERP systems, and cybersecurity."
-                    },
-                    {
-                      "path": "assets/images/RAFS_Moment.jpg",
-                      "title": "RPA & Data Analytics",
-                      "heading": ["Robotic Process Automation &", "Data Analytics"],
-                      "description": "Enhancing efficiency through robotic process automation."
-                    },
+                    },                    
                     {
                       "path": "assets/images/start-up.jpg",
                       "title": "Start-Up Services",
@@ -109,7 +127,7 @@ export const persona = {
                       "title": "Direct Hire & Interim Report",
                       "heading": ["Direct Hire & Interim Report"],
                       "description": "Helping you secure the perfect placement."
-                    }
+                    },
                   ]
                 }
               },
@@ -291,6 +309,50 @@ export const persona = {
                     props: {
                       componentName: 'ServicesAlchemyComponent'
                     }
+                  },
+                  {
+                    type: 'footer'
+                  }
+                ]
+              }
+            },
+            {
+              path: 'data-center-network-deployment',
+              layout: {
+                sections: [
+                  {
+                    type: 'projection',
+                    props: {
+                      componentName: 'ServicesDataCenterComponent'
+                    }
+                  },
+                  {
+                    type: 'projection',
+                    props: {
+                      componentName: "ServicesDataCenterListComponent"
+                    },
+                  },
+                  {
+                    type: 'footer'
+                  }
+                ]
+              }
+            },
+            {
+              path: 'salesforce-cloud',
+              layout: {
+                sections: [
+                  {
+                    type: 'projection',
+                    props: {
+                      componentName: 'ServicesSalesforceComponent'
+                    }
+                  },
+                  {
+                    type: 'projection',
+                    props: {
+                      componentName: "ServicesSalesforceListComponent"
+                    },
                   },
                   {
                     type: 'footer'

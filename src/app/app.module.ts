@@ -43,6 +43,10 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ImageViewerDirective } from './directive/image-viewer.directive';
 import { ToggleIconComponent } from './components/toggle-icon/toggle-icon.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { ServicesDataCenterComponent } from './pages/services-data_center/services-data_center.component';
+import { ServicesDataCenterListComponent } from './pages/services-data_center-list/services-data_center-list.components';
+import { ServicesSalesforceComponent } from './pages/services-salesforce/services-salesforce.component';
+import { ServicesSalesforceListComponent } from './pages/services-salesforce-list/services-salesforce-list.component';
 
 registerLocaleData(en);
 
@@ -73,6 +77,10 @@ registerLocaleData(en);
     ServicesStartupComponent,
     ServicesStartupListComponent,
     ServicesAlchemyComponent,
+    ServicesDataCenterComponent,
+    ServicesDataCenterListComponent,
+    ServicesSalesforceComponent,
+    ServicesSalesforceListComponent,
     CarouselImgDescComponent,
     MoreInfoComponent,
     CopyrightComponent,
