@@ -74,7 +74,7 @@ export const persona = {
                 props: {
                   slides: [
                     {
-                      "path": "assets/images/wealthworks-home.jpeg",
+                      "path": "assets/wwpts_new_images/wealthworks-home.avif",
                       "title": "Home",
                       "heading": ["Welcome to Wealthworks Partners"],
                       "description": "We are a leading professional advisory firm that support its clients as they grow and transition throughout their lifecycle and offers six service lines that cover a broad range of professional services.",
@@ -87,7 +87,7 @@ export const persona = {
                       "description": "Powering Scalable, Secure, and High-Performance Google Infrastructure.",
                     },
                     {
-                      "path": "assets/images/RAFS_Moment.jpg",
+                      "path": "assets/wwpts_new_images/RAFS_Moment.png",
                       "title": "RPA & Data Analytics",
                       "heading": ["Robotic Process Automation &", "Data Analytics"],
                       "description": "Enhancing efficiency through robotic process automation."
@@ -99,31 +99,31 @@ export const persona = {
                       "description": "Empowering Businesses with Scalable, AI-Driven Salesforce CRM Solutions."
                     },
                     {
-                      "path": "assets/images/TA-Services_Moment.jpg",
+                      "path": "assets/wwpts_new_images/TA-Services_Moment.jpeg",
                       "title": "Technical Accounting & IPO Services",
                       "heading": ["Technical Accounting & IPO Services"],
                       "description": "Expert guidance in technical accounting is just a call away."
                     },
                     {
-                      "path": "assets/images/Sox-landing.jpg",
+                      "path": "assets/wwpts_new_images/Sox-landing.jpeg",
                       "title": "SOX & Internal Audit",
                       "heading": ["SOX & Internal Audit"],
                       "description": "Establishing trust with a comprehensive roadmap to success."
                     },
                     {
-                      "path": "assets/images/IT-Compliance_Moment.jpg",
+                      "path": "assets/wwpts_new_images/IT-Compliance_Moment.png",
                       "title": "IT Compliance & Advisory",
                       "heading": ["IT Compliance &", "Advisory"],
                       "description": "Expertise in IT audits, ERP systems, and cybersecurity."
                     },                    
                     {
-                      "path": "assets/images/start-up.jpg",
+                      "path": "assets/wwpts_new_images/start-up.png",
                       "title": "Start-Up Services",
                       "heading": ["Hatchery & Start-Up Services"],
                       "description": "Empowering your journey toward a successful future."
                     },
                     {
-                      "path": "assets/images/directHire_Moment.jpg",
+                      "path": "assets/wwpts_new_images/directHire_Moment.png",
                       "title": "Direct Hire & Interim Report",
                       "heading": ["Direct Hire & Interim Report"],
                       "description": "Helping you secure the perfect placement."

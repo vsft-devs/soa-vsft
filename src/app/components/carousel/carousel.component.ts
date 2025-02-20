@@ -11,7 +11,7 @@ export class CarouselComponent {
     "title": "Home"
   },
   {
-    "path": "assets/images/home-hero.jpg",
+    "path": "assets/wwpts_new_images/home-hero.jpg",
     "title": "Hero"
   },
   {
