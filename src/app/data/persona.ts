@@ -93,25 +93,25 @@ export const persona = {
                       "description": "Enhancing efficiency through robotic process automation."
                     },
                     {
-                      "path": "assets/images/salesforce_carousel.jpg",
+                      "path": "assets/wwpts_new_images/salesforce_carousel.png",
                       "title": "Salesforce Cloud",
                       "heading": ["Salesforce Cloud"],
                       "description": "Empowering Businesses with Scalable, AI-Driven Salesforce CRM Solutions."
                     },
                     {
-                      "path": "assets/wwpts_new_images/TA-Services_Moment.jpeg",
+                      "path": "assets/wwpts_new_images/TA-Services_Moment.webp",
                       "title": "Technical Accounting & IPO Services",
                       "heading": ["Technical Accounting & IPO Services"],
                       "description": "Expert guidance in technical accounting is just a call away."
                     },
                     {
-                      "path": "assets/wwpts_new_images/Sox-landing.jpeg",
+                      "path": "assets/wwpts_new_images/Sox-landing.png",
                       "title": "SOX & Internal Audit",
                       "heading": ["SOX & Internal Audit"],
                       "description": "Establishing trust with a comprehensive roadmap to success."
                     },
                     {
-                      "path": "assets/wwpts_new_images/IT-Compliance_Moment.png",
+                      "path": "assets/wwpts_new_images/IT-Compliance_Moment.webp",
                       "title": "IT Compliance & Advisory",
                       "heading": ["IT Compliance &", "Advisory"],
                       "description": "Expertise in IT audits, ERP systems, and cybersecurity."
